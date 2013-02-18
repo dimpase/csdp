@@ -10,14 +10,17 @@
 # 1.0e-6.  
 #
 
-all: theta1.out g50.out 
+all: theta1.out g50.out 5-theta.out
  
 #
 # Test the solver on theta1.dat-s
 #
 
 theta1.out: 
-	../solver/csdp theta1.dat-s >theta1.out
+	csdp theta1.dat-s >theta1.out
+
+5-theta.out: 
+	csdp 5.dat-s >5.out
 
 #
 # Test theta on the g50 graph.

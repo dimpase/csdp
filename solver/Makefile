@@ -94,7 +94,7 @@ CFLAGS=-O3 -ansi -Wall -DNOSHORTS -DUSEGETTIME -I../include
 # The default settings for a Linux system with gcc3, lapack, blas, and 
 # gfortran:
 #
-LIBS=-L../lib -lsdp -llapack -lblas -lgfortran -lm
+LIBS=-L$(SAGE_LOCAL)/lib -lsdp -llapack -lblas -lgfortran -lm
 #
 # 1. Warning about debian systems.  For some absurb reason, the BLAS
 # package in debian has the BLAS library named libblas-3.a, rather than
