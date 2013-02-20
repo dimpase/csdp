@@ -1,3 +1,8 @@
+#ifndef CSDPBLOCKMAT_H
+#define CSDPBLOCKMAT_H 1
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
   This file contains definitions for the block matrix data structures used
   in CSDP 3.0.  Note that there are an additional set of definitions used
@@ -84,7 +89,7 @@ struct sparseblock {
 struct constraintmatrix {
   struct sparseblock *blocks;
 };
-
-
-
-
+#ifdef __cplusplus
+}
+#endif
+#endif /* !CSDPBLOCKMAT_H */

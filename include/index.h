@@ -1,3 +1,8 @@
+#ifndef CSDPINDEX_H
+#define CSDPINDEX_H 1
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
   Declarations needed to handle indexing into Fortran arrays and packed
   arrays.
@@ -47,4 +52,7 @@
 
 
 #endif
-
+#ifdef __cplusplus
+}
+#endif
+#endif /* !CSDPINDEX_H */

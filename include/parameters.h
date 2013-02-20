@@ -1,3 +1,8 @@
+#ifndef CSDPPARAMETERS_H
+#define CSDPPARAMETERS_H 1
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
 
   This include file contains declarations for a number of parameters that 
@@ -27,9 +32,7 @@ struct paramstruc {
   double perturbobj;
   int fastmode;
 };
-
-
-
-
-
-
+#ifdef __cplusplus
+}
+#endif
+#endif /* !CSDPPARAMETERS_H */
