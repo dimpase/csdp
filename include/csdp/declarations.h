@@ -12,9 +12,9 @@ extern "C" {
   Other important includes that we need.
  */
 
-#include "index.h"
-#include "blockmat.h"
-#include "parameters.h"
+#include <csdp/index.h>
+#include <csdp/blockmat.h>
+#include <csdp/parameters.h>
 
 /*
   Our own routines.

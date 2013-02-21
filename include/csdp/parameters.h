@@ -8,7 +8,7 @@ extern "C" {
   This include file contains declarations for a number of parameters that 
   can affect the performance of CSDP.  You can adjust these parameters by 
  
-    1. #include "parameters.h" in your code.
+    1. #include <csdp/parameters.h> in your code.
     2. Declare struct paramstruc params;
     3. Call init_params(params); to get default values.
     4. Change the value of the parameter that you're interested in.
