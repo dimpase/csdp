@@ -3,7 +3,7 @@
   */
 
 #include <stdlib.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 
 void op_a(k,constraints,X,result)
