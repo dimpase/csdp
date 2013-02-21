@@ -3,7 +3,7 @@
   */
 
 #include <stdlib.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 
 void op_at(k,y,constraints,result)

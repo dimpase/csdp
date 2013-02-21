@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void makefill(k,C,constraints,pfill,work1,printlevel)
      int k;

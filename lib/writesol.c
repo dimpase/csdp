@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 int write_sol(fname,n,k,X,y,Z)
      char *fname;

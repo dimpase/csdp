@@ -50,7 +50,7 @@
  * Include CSDP declarations so that we'll know the calling interfaces.
  */
 
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 /*
  * The main program.  Setup data structures with the problem data, write

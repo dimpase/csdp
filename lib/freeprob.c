@@ -3,7 +3,7 @@
  */
 
 #include <stdlib.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void free_prob(n,k,C,a,constraints,X,y,Z)
      int n;

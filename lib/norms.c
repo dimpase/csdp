@@ -3,7 +3,7 @@
  */
 
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 double norm2(n,x)
      int n;

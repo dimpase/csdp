@@ -5,7 +5,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void store_packed(A,B)
      struct blockmatrix A,B;

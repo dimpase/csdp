@@ -38,7 +38,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 #ifdef USEGETTIME
 /*

@@ -6,7 +6,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 int solvesys(m,ldam,A,rhs)
      int m;

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void initsoln(n,k,C,a,constraints,pX0,py0,pZ0)
      int n;

@@ -6,7 +6,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 double calc_pobj(C,X,constant_offset)
      struct blockmatrix C;

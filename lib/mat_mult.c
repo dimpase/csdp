@@ -14,7 +14,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void mat_mult(scale1,scale2,A,B,C)
      double scale1,scale2;

@@ -8,7 +8,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void addscaledmat(A,scale,B,C)
      struct blockmatrix A;

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 double Fnorm(A)
      struct blockmatrix A;

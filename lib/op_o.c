@@ -14,7 +14,7 @@
 #ifdef USEOPENMP
 #include <omp.h>
 #endif
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 
 void

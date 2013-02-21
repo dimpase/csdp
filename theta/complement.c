@@ -10,7 +10,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 int main(argc,argv)
      int argc;

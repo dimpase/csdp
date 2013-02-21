@@ -4,7 +4,7 @@
 */
 
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 /*
  * This routine computes the relative primal infeasibility.

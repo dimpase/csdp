@@ -3,7 +3,7 @@
  * 0, so that psd will not stop.
  */
 
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 
 #ifdef USESIGTERM

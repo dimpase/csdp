@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 int main(argc,argv)
      int argc;

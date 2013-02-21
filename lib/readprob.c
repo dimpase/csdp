@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <limits.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 void skip_to_end_of_line();
 int get_line();

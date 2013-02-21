@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 int chol_blk(n,lda,A)
      int n;

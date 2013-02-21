@@ -2,7 +2,7 @@
   Compute the dual objective function value dobj=a'y.  
   */
 
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 double calc_dobj(k,a,y,constant_offset)
      int k;

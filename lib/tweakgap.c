@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "declarations.h"
+#include <csdp/declarations.h>
 
 
 void tweakgap(n,k,a,constraints,gap,Z,dZ,y,dy,work1,work2,work3,work4,workvec1,
