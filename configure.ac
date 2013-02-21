@@ -1,10 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.68])
+AC_PREREQ([2.67])
 AC_INIT([CSDP], [6.2], [dimpase@gmail.com])
 AM_INIT_AUTOMAKE
-LT_PREREQ([2.4])
+LT_PREREQ([2.2])
 LT_INIT([dlopen,disable-shared])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([solver/csdp.c])
