@@ -1,0 +1,13 @@
+bin_PROGRAMS = theta complement rand_graph graphtoprob
+theta_SOURCES = theta.c 
+graphtoprob_SOURCES = graphtoprob.c 
+rand_graph_SOURCES = rand_graph.c 
+complement_SOURCES = complement.c 
+theta_CPPFLAGS = -I$(top_srcdir)/include
+graphtoprob_CPPFLAGS = -I$(top_srcdir)/include
+rand_graph_CPPFLAGS = -I$(top_srcdir)/include
+complement_CPPFLAGS = -I$(top_srcdir)/include
+theta_LDADD=../lib/libsdp.la
+graphtoprob_LDADD=../lib/libsdp.la
+rand_graph_LDADD=../lib/libsdp.la
+complement_LDADD=../lib/libsdp.la
