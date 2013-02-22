@@ -4,13 +4,8 @@
 AC_PREREQ([2.67])
 AC_INIT([CSDP], [6.2], [dimpase@gmail.com])
 AM_INIT_AUTOMAKE
-<<<<<<< HEAD
-LT_PREREQ([2.4])
-LT_INIT([dlopen,disable-shared,no-undefined])
-=======
 LT_PREREQ([2.2])
-LT_INIT([dlopen,disable-shared])
->>>>>>> b08d55cc58b977af9c579d76087f0d851ac0e7ae
+LT_INIT([dlopen,disable-shared,no-undefined])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([solver/csdp.c])
 AC_CONFIG_HEADERS([config.h])
@@ -49,14 +44,15 @@ if test "x${have_lapack}" = xno; then
   ------------------------------------------])
 fi
 
+# these are taken care by AX_LAPACK/BLAS:
 # # FIXME: Replace `main' with a function in `-lgfortran':
 # AC_CHECK_LIB([gfortran], [main])
 # # FIXME: Replace `main' with a function in `-llapack':
 # AC_CHECK_LIB([lapack], [main])
-AC_CHECK_LIB(m, sqrt)
 # # FIXME: Replace `main' with a function in `-lsdp':
 # AC_CHECK_LIB([sdp], [main])
 
+AC_CHECK_LIB(m, sqrt)
 
 # Checks for header files.
 AC_CHECK_HEADERS(limits.h stddef.h stdlib.h string.h sys/time.h unistd.h)
