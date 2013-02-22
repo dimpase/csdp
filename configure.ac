@@ -5,7 +5,7 @@ AC_PREREQ([2.68])
 AC_INIT([CSDP], [6.2], [dimpase@gmail.com])
 AM_INIT_AUTOMAKE
 LT_PREREQ([2.4])
-LT_INIT([dlopen,disable-shared])
+LT_INIT([dlopen,disable-shared,no-undefined])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([solver/csdp.c])
 AC_CONFIG_HEADERS([config.h])
@@ -24,7 +24,26 @@ AC_CONFIG_FILES([Makefile lib/Makefile solver/Makefile include/Makefile
 
 # Checks for libraries.
 # FIXME: Replace `main' with a function in `-lblas':
-AC_CHECK_LIB([blas], [dnrm2])
+#AC_CHECK_LIB([blas], [dnrm2])
+
+AX_BLAS([have_blas=yes], [have_blas=no])
+if test "x${have_blas}" = xno; then          
+    AC_MSG_ERROR([
+  ------------------------------------------ 
+   A BLAS library and header file required to build csdp. Stopping...
+   Check 'config.log' for more information.
+  ------------------------------------------])
+fi
+
+AX_LAPACK([have_lapack=yes], [have_lapack=no])
+if test "x${have_lapack}" = xno; then          
+    AC_MSG_ERROR([
+  ------------------------------------------ 
+   A LAPACK library and header file required to build csdp. Stopping...
+   Check 'config.log' for more information.
+  ------------------------------------------])
+fi
+
 # # FIXME: Replace `main' with a function in `-lgfortran':
 # AC_CHECK_LIB([gfortran], [main])
 # # FIXME: Replace `main' with a function in `-llapack':
