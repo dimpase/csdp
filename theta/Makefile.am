@@ -1,4 +1,4 @@
-bin_PROGRAMS = theta complement rand_graph graphtoprob
+check_PROGRAMS = theta complement rand_graph graphtoprob
 theta_SOURCES = theta.c 
 graphtoprob_SOURCES = graphtoprob.c 
 rand_graph_SOURCES = rand_graph.c 
