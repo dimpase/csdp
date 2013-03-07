@@ -2,6 +2,7 @@
 
 To create a working installation, you need recent autotools.
 Run 
+
     autoreconf --install 
     automake --add-missing --copy
 
