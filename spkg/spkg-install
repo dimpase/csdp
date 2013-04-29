@@ -17,7 +17,7 @@ cd src
 echo "Configuring csdp..."
 ./configure --prefix="$SAGE_LOCAL"
 if [ $? -ne 0 ]; then
-   echo "Error configuring csdp."
+   echo >&2 "Error configuring csdp."
    exit 1
 fi
 
