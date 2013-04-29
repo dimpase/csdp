@@ -1,0 +1,39 @@
+= csdp =
+
+== Description ==
+
+This is a fast SDP solver written in C, with a callable library
+
+== License ==
+
+Common Public License Version 1.0
+
+== SPKG Maintainers ==
+
+* Dmitrii Pasechnik
+
+== Upstream Contact ==
+
+Dmitrii Pasechnik <dimpase+sage@gmail.com>
+
+== Dependencies ==
+
+
+== Special Update/Build Instructions ==
+
+csdp is an autotool'ed version of CSDP,  
+developed in its own repository at
+https://github.org/dimpase/csdp. This is also where the spkg
+metadata is tracked. To build a new spkg, use the spkg/make-spkg.sh
+script in the repository.
+
+To update to a new version, you need to bump the version number in
+configure.ac and rerun autotools (autoreconf -fiv).
+
+Note that the repository in the spkg is just a dummy to make Sage
+happy, any changes should be merged to the upstream repo.
+
+== Changelog ==
+
+=== csdp-6.2 (Dmitrii Pasechnik, 29 Apr 2013) ===
+ * Initial release
