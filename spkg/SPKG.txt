@@ -33,6 +33,10 @@ configure.ac and rerun autotools (autoreconf -fiv).
 Note that the repository in the spkg is just a dummy to make Sage
 happy, any changes should be merged to the upstream repo.
 
+The build is done with NOSHORTS variable undefined; this makes it incompatible
+with some packages, where NOSHORTS must be defined, e.g. 
+https://github.com/dimpase/pycsdp
+
 == Changelog ==
 
 === csdp-6.2 (Dmitrii Pasechnik, 29 Apr 2013) ===
