@@ -15,6 +15,7 @@ rm -rf csdp-*
 
 CWD=`pwd`
 cd ..
+CSDP_REPO=`pwd`
 
 VERSION=`autoconf --trace='AC_INIT:$2'`
 CSDP_DIR="csdp-$VERSION$PATCHLEVEL"
@@ -37,9 +38,12 @@ cp ../LICENSE "$SPKG_ROOT"
 
 cd "$SPKG_ROOT"
 echo 'src' > .hgignore
-hg init .
-hg add
-hg commit -m 'This is not the true repository, read SPKG.txt'
+#hg init .
+#hg add
+#hg commit -m 'This is not the true repository, read SPKG.txt'
+hg convert --filemap "$CWD"/convert_mapfile "$CSDP_REPO"
+mv csdp-hg/.hg .
+rm -rf csdp-hg
 
 cd "$CWD"
 sage -pkg "$CSDP_DIR"
