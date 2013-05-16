@@ -39,16 +39,12 @@ mv csdp-$VERSION src
 
 echo "$SPKG_ROOT"
 cd "$SPKG_ROOT"
-#echo 'src' > .hgignore
-#hg init .
-#hg add
-#hg commit -m 'This is not the true repository, read SPKG.txt'
 hg convert --filemap "$CWD"/convert_mapfile "$CSDP_REPO"
 mv csdp-hg/.hg .
 hg update
-#echo 'blah' > blah
-#hg add blah
-#hg ci -m 'imported from git!'
+hg mv spkg/* .
+hg mv spkg/.hgignore .
+hg commit -m 'moved spkg files to the spkg root; git history imported'
 rm -rf csdp-hg
 cd "$CWD"
 sage -pkg "$CSDP_DIR"
