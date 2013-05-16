@@ -2,3 +2,4 @@ include spkg
 exclude spkg/README.md
 exclude spkg/install.sh
 exclude spkg/make-spkg.sh
+exclude spkg/convert_mapfile

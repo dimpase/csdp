@@ -31,20 +31,25 @@ cd "$SPKG_ROOT"
 tar xf ../../csdp-$VERSION.tar.gz
 mv csdp-$VERSION src
 
-cd "$CWD"
-cp spkg-install "$SPKG_ROOT"
-cp SPKG.txt "$SPKG_ROOT"
-cp ../LICENSE "$SPKG_ROOT"
+#cd "$CWD"
+#cp spkg-install "$SPKG_ROOT"
+#cp SPKG.txt "$SPKG_ROOT"
+#cp ../LICENSE "$SPKG_ROOT"
+#cp .hgignore "$SPKG_ROOT"
 
+echo "$SPKG_ROOT"
 cd "$SPKG_ROOT"
-echo 'src' > .hgignore
+#echo 'src' > .hgignore
 #hg init .
 #hg add
 #hg commit -m 'This is not the true repository, read SPKG.txt'
 hg convert --filemap "$CWD"/convert_mapfile "$CSDP_REPO"
 mv csdp-hg/.hg .
+hg update
+#echo 'blah' > blah
+#hg add blah
+#hg ci -m 'imported from git!'
 rm -rf csdp-hg
-
 cd "$CWD"
 sage -pkg "$CSDP_DIR"
 
