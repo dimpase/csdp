@@ -38,6 +38,20 @@ with packages, where NOSHORTS must be defined, e.g.
 https://github.com/dimpase/pycsdp; 
 also the Sage Cython interface needs NOSHORTS defined.
 
+Detailed steps to build the spkg are as follows:
+ * clone the git repo
+ * then 
+     cd csdp/
+     autoreconf --install 
+     automake --add-missing --copy
+ * start sage shell and run configure with right prefix there:
+     sage -sh
+     ./configure --prefix=$SAGE_LOCAL
+ * finally, build the spkg:
+     cd spkg/
+     ./make-spkg.sh
+ * then copy/use the resulting csdp-6.2.spkg
+
 == Changelog ==
 
 === csdp-6.2 (Dmitrii Pasechnik, 29 Apr 2013) ===
