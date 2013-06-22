@@ -38,7 +38,12 @@ with packages, where NOSHORTS must be defined, e.g.
 https://github.com/dimpase/pycsdp; 
 also the Sage Cython interface needs NOSHORTS defined.
 
-Detailed steps to build the spkg are as follows:
+Detailed steps to build the spkg are as follows. You need 
+ * git
+ * hg with "convert =" in [extensions] section of ~/.hgrc
+ * autotools and libtool (the full autohell suite, version at least 2.67)
+
+With these ready:
  * clone the git repo
  * then 
      cd csdp/
