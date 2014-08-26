@@ -19,3 +19,7 @@ Fortran is needed for compiling/using CSDP. If you need it to be callable within
     ./configure --prefix=$SAGE_LOCAL
 followed by make, etc.
 
+-----------------------
+how to cite it using DOI:
+
+[![DOI](https://zenodo.org/badge/5728/dimpase/csdp.png)](http://dx.doi.org/10.5281/zenodo.11411)
