@@ -1,5 +1,6 @@
 language: c
 compiler:
   - gcc
-# Change this to your needs
+before_install:
+  - sudo apt-get install gfortran liblapack-dev
 script: autoreconf --install && automake --add-missing --copy && ./configure && make
